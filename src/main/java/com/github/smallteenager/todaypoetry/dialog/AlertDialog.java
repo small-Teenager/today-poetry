@@ -1,4 +1,4 @@
-package com.github.smallteenager.todaypoetry.dialog.dialog;
+package com.github.smallteenager.todaypoetry.dialog;
 
 import com.intellij.openapi.ui.DialogWrapper;
 import org.jetbrains.annotations.Nullable;

@@ -1,6 +1,6 @@
 package com.github.smallteenager.todaypoetry.compontent;
 
-import com.github.smallteenager.todaypoetry.dialog.dialog.AlertDialog;
+import com.github.smallteenager.todaypoetry.dialog.AlertDialog;
 import com.intellij.openapi.components.ApplicationComponent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
