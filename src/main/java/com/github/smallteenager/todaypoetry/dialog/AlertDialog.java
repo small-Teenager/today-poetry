@@ -1,5 +1,6 @@
 package com.github.smallteenager.todaypoetry.dialog;
 
+import com.github.smallteenager.todaypoetry.util.TextUtil;
 import com.intellij.openapi.ui.DialogWrapper;
 import org.jetbrains.annotations.Nullable;
 
@@ -11,25 +12,25 @@ public class AlertDialog extends DialogWrapper {
 
     public AlertDialog() {
         super(true);
-        setTitle("一言");
+        setTitle("Today Poetry");
         init();
     }
 
     @Override
     protected @Nullable JComponent createCenterPanel() {
 
-        JPanel jPanel = new JPanel();
-        jLabel = new JLabel("一言内容");
+        JPanel jPanel = new JPanel(new BorderLayout());
+        jLabel = new JLabel(TextUtil.getText());
         jPanel.add(jLabel);
         return jPanel;
     }
 
     @Override
     protected JComponent createSouthPanel() {
-        JPanel jPanel = new JPanel();
+        JPanel jPanel = new JPanel(new BorderLayout());
         JButton jButton= new JButton("next");
         jButton.addActionListener(e -> {
-            jLabel.setText("一言内容+1");
+            jLabel.setText(TextUtil.getText());
         });
         jPanel.add(jButton);
         return jPanel;
